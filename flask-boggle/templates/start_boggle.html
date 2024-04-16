@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}game{% endblock %}
+
+{% block content %}
+<div id="boggle-container">
+
+    <div id="start-boggle-cont">
+        <button id="start-boggle">START</button>
+    </div>
+
+    <div id="user-word-form-cont">
+        <form id="user-word-form" style="display: none;">
+             <p>ENTER WORDS!</p>
+             <input type="text" name="word" id="word">
+             <button type="submit">submit!</button>
+        </form>
+    </div>
+
+    <div id="game-board-container" style="display: none;">
+
+    </div>
+
+    <div id="result-container">
+       
+    </div>
+    
+    <div id="timer-container" style="display: none;">
+        <p>TIME LEFT:<span id="timer-display"></span></p>
+    </div>
+
+    <div id="score-container" style="display: none;">
+         <p><span id="score-display"></span></p>
+    </div>
+
+</div>
+{%endblock%}
